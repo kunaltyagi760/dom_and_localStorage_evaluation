@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Task Manager</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            margin: auto;
+        }
+
+        #navbar>div{
+            background-color: rgb(21, 192, 21);
+            display: flex;
+            gap: 30px;
+            font-size: 25px;
+            justify-content: center;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #navbar a{
+            text-decoration: none;
+            color: white;
+        }
+        .card{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            margin: 40px 80px;
+            padding: 50px 100px;
+        }
+        #row1{
+            background-color: rgb(21, 192, 21);
+            color: white;
+            font-weight: 400;
+            display: flex;
+            gap: 200px;
+            padding: 20px;
+            font-size: 25px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav id="navbar">
+            <div>
+                <h3 id="h3">Masai Task Manager</h3>
+                <a href="index.html">Home</a>
+                <a href="deletedTask.html">Deleted Tasks</a>
+            </div>
+        </nav>
+        <div class="card">
+            <h1>Deleted Task</h1>
+            <br>
+            <select name="" id="">
+                <option value="">Filter by Priority</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <select name="" id="">
+                <option value="">Filter by Status</option>
+                <option value="low">Pending</option>
+                <option value="medium">In-progress</option>
+                <option value="high">Complete</option>
+            </select>
+            <br><br>
+            <table id="table">
+                <tr id="row1">
+                    <th>Name</th>
+                    <th>Prority</th>
+                    <th>Status</th>
+                    <th>Remove</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

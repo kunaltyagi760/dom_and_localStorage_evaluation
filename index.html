@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Task Manager</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            margin: auto;
+        }
+
+        #navbar>div{
+            background-color: rgb(21, 192, 21);
+            display: flex;
+            gap: 30px;
+            font-size: 25px;
+            justify-content: center;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #navbar a{
+            text-decoration: none;
+            color: white;
+        }
+        .card{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            margin: 40px 80px;
+            padding: 50px 100px;
+            display: flex;
+            gap: 50px;
+        }
+        .createTask{
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+            border-radius: 5px;
+            width: 20%;
+        }
+        #btn1{
+            background-color: rgb(21, 192, 21);
+            border-radius: 5px;
+            color: white;
+            font-weight: 600;
+            padding: 5px;
+            border: none;
+        }
+        #row1{
+            background-color: rgb(21, 192, 21);
+            color: white;
+            font-weight: 400;
+            display: flex;
+            gap: 200px;
+            padding: 20px;
+            font-size: 25px;
+        }
+        .row{
+            font-weight: 400;
+            display: flex;
+            gap: 200px;
+            padding: 20px;
+            font-size: 25px; 
+        }
+        #change_btn{
+            background-color: plum;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #remove_btn{
+            background-color: rgb(21, 192, 21);
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav id="navbar">
+            <div>
+                <h3 id="h3">Masai Task Manager</h3>
+                <a href="index.html">Home</a>
+                <a href="deletedTask.html">Deleted Tasks</a>
+            </div>
+        </nav>
+        <div class="card">
+            <div class="createTask">
+                <input type="text" id="task">
+                <br>
+                <br>
+                <select name="" id="priority">
+                    <option value="">Priority</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <br><br>
+                <button id="btn1">Create Task</button>
+            </div>
+            <table id="table">
+                <tr id="row1">
+                    <th>Name</th>
+                    <th>Prority</th>
+                    <th>Status</th>
+                    <th>Remove</th>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="index.js"></script>
