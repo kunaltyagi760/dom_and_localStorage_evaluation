@@ -43,6 +43,19 @@
             padding: 20px;
             font-size: 25px;
         }
+        .row{
+            font-weight: 400;
+            display: flex;
+            gap: 200px;
+            padding: 20px;
+            font-size: 25px; 
+        }
+        .remove_btn{
+            background-color: rgb(21, 192, 21);
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
 
     </style>
@@ -59,13 +72,13 @@
         <div class="card">
             <h1>Deleted Task</h1>
             <br>
-            <select name="" id="">
+            <select name="" id="filterByPriority">
                 <option value="">Filter by Priority</option>
                 <option value="low">Low</option>
                 <option value="medium">Medium</option>
                 <option value="high">High</option>
             </select>
-            <select name="" id="">
+            <select name="" id="filterByStatus">
                 <option value="">Filter by Status</option>
                 <option value="low">Pending</option>
                 <option value="medium">In-progress</option>
@@ -73,13 +86,18 @@
             </select>
             <br><br>
             <table id="table">
-                <tr id="row1">
-                    <th>Name</th>
-                    <th>Prority</th>
-                    <th>Status</th>
-                    <th>Remove</th>
-                    <th>Delete</th>
-                </tr>
+                <thead>
+                    <tr id="row1">
+                        <th>Name</th>
+                        <th>Prority</th>
+                        <th>Status</th>
+                        <th>Remove</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
             </table>
         </div>
         
@@ -87,3 +105,4 @@
     
 </body>
 </html>
+<script src="delete_task.js"></script>
